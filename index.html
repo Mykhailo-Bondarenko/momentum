@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Momentum</title>
+  <script src="main.js" defer type="module"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" placeholder="Enter city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="Enter your name" maxlength="15" />
+    </div>
+  </main>
+  <footer class="footer">
+    <img src="./assets/svg/settings.svg" alt="settings" class="settings__image">
+    <div class="settings">
+      <div class="settings-item">
+        <span class="title">Music player</span>
+        <div class="on" id="music"></div>
+      </div>
+      <div class="settings-item">
+        <span class="title">Time and date</span>
+        <div class="on" id="time"></div>
+      </div>
+      <div class="settings-item">
+        <span class="title">Weather</span>
+        <div class="on" id="weather"></div>
+      </div>
+      <div class="settings-item">
+        <span class="title">Quotes</span>
+        <div class="on" id="quotes"></div>
+      </div>
+      <div class="settings-item">
+        <span class="title">Translate words</span>
+        <div class="on" id="translate"></div>
+      </div>
+      <div class="settings-item">
+        <span class="title"><span class="language" id="english">English </span> / <span class="language"
+            id="russian">Russian</span></span>
+      </div>
+    </div>
+    <button class="change-quote"></button>
+    <div id="quote">
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="translate">
+      <div class="container">
+        <label for="text" class="translate__label"></label>
+        <input class="translate__input" type="text" name="text" placeholder="Enter word">
+        <div class="btns">
+          <button type="submit" class="check" id="check">Check</button>
+          <button type="text" class="check" id="next">Next</button>
+        </div>
+      </div>
+      <div class="answer"></div>
+    </div>
+  </footer>
+  <audio src="./assets/sounds/Aqua Caelestis.mp3"></audio>
+  <audio src="./assets/sounds/Energetic indie rock jump.mp3"></audio>
+  <audio src="./assets/sounds/Ennio Morricone.mp3"></audio>
+  <audio src="./assets/sounds/Future bass hot night.mp3"></audio>
+  <audio src="./assets/sounds/Happy long.mp3"></audio>
+  <audio src="./assets/sounds/In your heart forever.mp3"></audio>
+  <audio src="./assets/sounds/Indie rock far away.mp3"></audio>
+  <audio src="./assets/sounds/River Flows In You.mp3"></audio>
+  <audio src="./assets/sounds/Summer fashion pop dance.mp3"></audio>
+  <audio src="./assets/sounds/Summer Wind.mp3"></audio>
+  <audio src="./assets/sounds/Tropical house.mp3"></audio>
+  <audio src="./assets/sounds/Tropical summer music.mp3"></audio>
+</body>
+
+</html>
