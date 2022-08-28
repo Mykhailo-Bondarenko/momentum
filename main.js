@@ -110,7 +110,7 @@ russian.addEventListener('click', () => {
 });
 
 if (defaultLanguage === 'en') {
-  city.value = localStorage.getItem('weather') || 'Minsk';
+  city.value = localStorage.getItem('weather') || 'Kyiv';
   userName.placeholder = 'Enter your name';
   city.placeholder = 'Enter city';
   translateInput.placeholder = 'Enter word';
@@ -121,7 +121,7 @@ if (defaultLanguage === 'en') {
 }
 
 if (defaultLanguage === 'ru') {
-  city.value = localStorage.getItem('weatherRu') || 'Минск';
+  city.value = localStorage.getItem('weatherRu') || 'Киев';
   for (let i = 0; i < titlesSettings.length; i++) {
     if (i === 5) continue;
     titlesSettings[i].innerHTML = nameTitleSettings[i].ru;
